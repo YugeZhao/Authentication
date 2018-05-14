@@ -55,7 +55,7 @@ testing = []
 training_labels = []
 testing_labels=[]
 
-imname1 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake10.jpg'
+imname1 = 'fake10.jpg'
 d_fake, sigmaC_fake, sigmaS_fake = 12, 20, 20
 fake1 = readImage(imname1, d_fake, sigmaC_fake, sigmaS_fake)
 logo1 = detect_contour(fake1)
@@ -65,7 +65,7 @@ training_labels.append(0)
 #cv2.waitKey(0)
 #cv2.destroyWindow('edges')
 
-imname2 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake101.jpeg'
+imname2 = 'fake101.jpeg'
 fake2 = readImage(imname2, d_fake, sigmaC_fake, sigmaS_fake)
 logo2 = detect_contour(fake2)
 training.append(logo2)
@@ -73,79 +73,79 @@ training_labels.append(0)
 #cv2.waitKey(0)
 #cv2.destroyWindow('edges')
 
-imname3 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake11.jpeg'
+imname3 = 'fake11.jpeg'
 fake3 = readImage(imname3, d_fake, sigmaC_fake, sigmaS_fake)
 logo3 = detect_contour(fake3)
 training.append(logo3)
 training_labels.append(0)
 
-imname4 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake11.jpg'
+imname4 = 'fake11.jpg'
 fake4 = readImage(imname4, d_fake, sigmaC_fake, sigmaS_fake)
 logo4 = detect_contour(fake4)
 training.append(logo4)
 training_labels.append(0)
 
-imname5 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake111.jpeg'
+imname5 = 'fake111.jpeg'
 fake5 = readImage(imname5, d_fake, sigmaC_fake, sigmaS_fake)
 logo5 = detect_contour(fake5)
 training.append(logo5)
 training_labels.append(0)
 
-imname6 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake112.jpeg'
+imname6 = 'fake112.jpeg'
 fake6 = readImage(imname6, d_fake, sigmaC_fake, sigmaS_fake)
 logo6 = detect_contour(fake6)
 training.append(logo6)
 training_labels.append(0)
 
-imname7 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake2.jpg'
+imname7 = 'fake2.jpg'
 fake7 = readImage(imname7, d_fake, sigmaC_fake, sigmaS_fake)
 logo7 = detect_contour(fake7)
 training.append(logo7)
 training_labels.append(0)
 
-#imname8 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake22.jpeg'
+#imname8 = 'fake22.jpeg'
 #fake8 = readImage(imname8, d_fake, sigmaC_fake, sigmaS_fake)
 #logo8 = detect_contour(fake8)
 #training.append(logo8)
 #training_labels.append(0)
 
-imname9 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake221.jpeg'
+imname9 = 'fake221.jpeg'
 fake9 = readImage(imname9, d_fake, sigmaC_fake, sigmaS_fake)
 logo9 = detect_contour(fake9)
 training.append(logo9)
 training_labels.append(0)
 
-imname10 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake3.jpg'
+imname10 = 'fake3.jpg'
 fake10 = readImage(imname10, d_fake, sigmaC_fake, sigmaS_fake)
 logo10 = detect_contour(fake10)
 training.append(logo10)
 training_labels.append(0)
 
-imname11 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake31.jpg'
+imname11 = 'fake31.jpg'
 fake11 = readImage(imname11, d_fake, sigmaC_fake, sigmaS_fake)
 logo11 = detect_contour(fake11)
 training.append(logo11)
 training_labels.append(0)
 
-#imname12 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake6.jpg'
+#imname12 = 'fake6.jpg'
 #fake12 = readImage(imname12, d_fake, sigmaC_fake, sigmaS_fake)
 #logo12 = detect_contour(fake12)
 #training.append(logo12)
 #training_labels.append(0)
 
-imname13 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake61.jpeg'
+imname13 = 'fake61.jpeg'
 fake13 = readImage(imname13, d_fake, sigmaC_fake, sigmaS_fake)
 logo13 = detect_contour(fake13)
 training.append(logo13)
 training_labels.append(0)
 
-imname14 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake62.jpeg'
+imname14 = 'fake62.jpeg'
 fake14 = readImage(imname14, d_fake, sigmaC_fake, sigmaS_fake)
 logo14 = detect_contour(fake14)
 training.append(logo14)
 training_labels.append(0)
 
-imname15 = '/Users/annazhao/eclipse-workspace/Authentication Program/src/Images/fake7.jpg'
+imname15 = 'fake7.jpg'
 fake15 = readImage(imname15, d_fake, sigmaC_fake, sigmaS_fake)
 logo15 = detect_contour(fake15)
 testing.append(logo15)
