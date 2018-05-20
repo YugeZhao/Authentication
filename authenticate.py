@@ -11,14 +11,18 @@ import cv2
 from cv2 import circle
 from cv2 import ml
 
-##readImage laods the original image to greyscale image, decrease noise, and find edges
+###Loads the original image to greyscale image, decrease noise, and find edges
 def readImage(imname, d, sigmaC, sigmaS):
     im_o = cv2.imread(imname)
     im = cv2.resize(im_o, (100, 100)) 
     #print(im.shape)
-    image = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
-    image = cv2.bilateralFilter(image,d,sigmaC,sigmaS)
+    ###convert to greyscale
+    image = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)  
+    ### Decrease noise and enhance edges
+    image = cv2.bilateralFilter(image,d,sigmaC,sigmaS)  
+    ###  Canny edge detection
     image_edge = cv2.Canny(image,150,200)
+    ### Threshold image 
     image_edge_thresh = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
     #cv2.imshow('edges',image_edge_thresh)
     return image_edge_thresh
@@ -28,7 +32,7 @@ def detect_features(image):
     blobs = detector.detect(image)
     return blobs
 
-
+### Exract contours
 def detect_contour(image):
     (im, contours, hier) = cv2.findContours(image, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
 
